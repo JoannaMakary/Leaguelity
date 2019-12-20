@@ -10,9 +10,9 @@ var request = require("request");
 router.get("/", function(req, res) {
     request("https://ddragon.leagueoflegends.com/cdn/9.24.2/data/en_US/champion.json", function(error, response, body) {
         if (!error && response.statusCode == 200) {
-            var data = JSON.parse(body);
+            var results = JSON.parse(body).data;
             // Send HTML page as response, looks in Views directory for Express
-            res.render("landing", { data: data });
+            res.render("landing", { results: results });
         }
     });
 });

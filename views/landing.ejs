@@ -11,7 +11,11 @@
                 <div class="champion-shadow">
                     <img class="champion-image img-fluid" src="" width="111px">
                 </div>
-                <p class="champion-name text-center"></p>
+                <p class="champion-name text-center">
+                    <% for( let key in results ){ %>
+                        <%= results[key]["name"]; %>
+                            <%  } %>
+                </p>
             </div>
         </div>
     </div>

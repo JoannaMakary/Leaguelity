@@ -4,10 +4,6 @@ var app = express();
 // object modeling for node/mongoDB
 var mongoose = require("mongoose");
 
-var User = require("./models/champion");
-
-var seedDB = require("./seeds");
-
 // requiring routes
 var indexRoutes = require("./routes/index");
 
