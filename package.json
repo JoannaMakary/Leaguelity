@@ -1,0 +1,19 @@
+{
+    "name": "leaguelity",
+    "version": "1.0.0",
+    "description": "A website to showcase League of Legends data and statistics.",
+    "main": "app.js",
+    "dependencies": {
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "jquery": "^3.4.1",
+        "mongoose": "^5.8.1",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Joanna Makary",
+    "license": "ISC"
+}

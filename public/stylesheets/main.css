@@ -1,0 +1,25 @@
+body {
+    background: url("https://i.imgur.com/jTaIr6y.png") repeat fixed center;
+    background-color: white;
+    font-family: 'Quicksand';
+}
+
+.navbar {
+    background-color: rgba(176, 191, 255, 0.7);
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+}
+
+.container {
+    background-color: whitesmoke;
+}
+
+.champion-image {
+    border-radius: 55%;
+    border: 8px solid white;
+    border-style: inset;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.9);
+}
