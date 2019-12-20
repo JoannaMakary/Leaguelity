@@ -10,12 +10,12 @@
             <% for( let key in results ){ %>
                 <div class="col-xs-1-10">
                     <div class="champion-shadow">
-                        <a href="">
-                            <img class="champion-image img-fluid" src="https://ddragon.leagueoflegends.com/cdn/9.24.2/img/champion/<%= results[key].image.full %>" width="111px">
+                        <a href="/<%= results[key]['name'] %>">
+                        <img class="champion-image img-fluid" src="https://ddragon.leagueoflegends.com/cdn/9.24.2/img/champion/<%= results[key].image.full %>" width="111px">
                         <p class="champion-name text-center">
                             <%= results[key]["name"]; %>
                         </p>
-                    </a>
+                        </a>
                     </div>
                 </div>
                 <%  } %>

@@ -17,4 +17,15 @@ router.get("/", function(req, res) {
     });
 });
 
+// SHOW: Shows more info about a champion
+router.get("/:id", function(req, res) {
+    request("https://ddragon.leagueoflegends.com/cdn/9.24.2/data/en_US/champion.json", function(error, response, body) {
+        if (!error && response.statusCode == 200) {
+            var results = JSON.parse(body).data;
+            // render show template with that ID
+            res.render("champion/show", { results: results, query: req.params });
+        }
+    });
+});
+
 module.exports = router;

@@ -1,0 +1,24 @@
+<%- include("../partials/header") %>
+
+    <% let champion = query.id.charAt(0).toUpperCase() + query.id.slice(1) %>
+
+        <div class="container">
+
+            <p class="champion-name text-center">
+                <%= results[champion]["name"]; %>
+            </p>
+
+            <p>
+                <%= results[champion]["title"]; %>
+            </p>
+
+
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/<%= results[champion]['name'] %>_0.jpg">
+
+            <p>
+                <%= results[champion]["tags"]; %>
+            </p>
+
+        </div>
+
+        <%- include("../partials/footer") %>
