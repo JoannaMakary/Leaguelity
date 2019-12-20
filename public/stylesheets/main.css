@@ -4,6 +4,24 @@ body {
     font-family: 'Quicksand';
 }
 
+a {
+    color: #424860;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6E779F;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #424860;
+}
+
+a:visited {
+    color: #424860;
+}
+
 .navbar {
     background-color: rgba(176, 191, 255, 0.7);
     font-size: 1.2em;
@@ -15,6 +33,11 @@ body {
 
 .container {
     background-color: whitesmoke;
+}
+
+.champion-name {
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 .champion-image {

@@ -1,22 +1,24 @@
 <%- include("./partials/header") %>
 
     <div class="container">
-        <div class="container pt-3 pb-3">Welcome to <strong>Leaguelity</strong>! This website uses the APIs provided by Riot to generate useful statistics and data for champion build guides and tier lists. Use the navigation bar to or select a champion below to view the best item builds,
+        <div class="container pt-4 pb-2">Welcome to <strong>Leaguelity</strong>! This website uses the APIs provided by Riot to generate useful statistics and data for champion build guides and tier lists. Use the navigation bar to or select a champion below to view the best item builds,
             summoner spells, runes reforged, skill orders, counters, synergies, statistics and more.</div>
 
-        <h5 class="text-center pb-3"><strong>Champion List</strong></h5>
+        <h4 class="text-center pb-3"><strong>Champion List</strong></h4>
 
         <div class="row">
-            <div class="col-xs-1-10">
-                <div class="champion-shadow">
-                    <img class="champion-image img-fluid" src="" width="111px">
+            <% for( let key in results ){ %>
+                <div class="col-xs-1-10">
+                    <div class="champion-shadow">
+                        <a href="">
+                            <img class="champion-image img-fluid" src="https://ddragon.leagueoflegends.com/cdn/9.24.2/img/champion/<%= results[key].image.full %>" width="111px">
+                        <p class="champion-name text-center">
+                            <%= results[key]["name"]; %>
+                        </p>
+                    </a>
+                    </div>
                 </div>
-                <p class="champion-name text-center">
-                    <% for( let key in results ){ %>
-                        <%= results[key]["name"]; %>
-                            <%  } %>
-                </p>
-            </div>
+                <%  } %>
         </div>
     </div>
 
