@@ -6,6 +6,7 @@ var mongoose = require("mongoose");
 
 // requiring routes
 var indexRoutes = require("./routes/index");
+var championsRoutes = require("./routes/champions");
 
 // connect to local DB
 mongoose.connect("mongodb://localhost/leaguelity_v1", { useNewUrlParser: true });
@@ -16,6 +17,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
 app.use(indexRoutes);
+app.use(championsRoutes);
 
 // seedDB();
 

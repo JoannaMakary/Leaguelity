@@ -4,6 +4,10 @@ body {
     font-family: 'Quicksand';
 }
 
+.form-inline .form-control {
+    width: 21vw;
+}
+
 a {
     color: #424860;
     text-decoration: none;
